@@ -8,6 +8,9 @@
     <title>Perfume</title>
 
     <!-- add reset to create consistency between browsers and devices. -->
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Cairo:wght@200&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="main.css">
 
@@ -17,7 +20,30 @@
 </head>
 
 <body>
-    <div class="animationbox"></div>
+     
+    <div class="sticky">
+    <div class="dropdown">
+    <button class="brand">VISUALPERFUME</button>
+    <div class="dropdowncontent">
+    <p>Mouillettes > colorchart</p>
+    </div>
+    </div>
+    </div>
+
+
+
+    <div class="animationbox">
+    </div>
+    <div id="left" class="left" onclick="prev()" style="font-size: 30px;
+    width: 10px;
+    height: 500px;
+    float: left;
+    margin-top: 300px;
+    cursor: pointer;">
+        ◦
+    </div>
+
+
     <div class="container">
         <div class="filter">
             <span class="indie"></span>
@@ -25,6 +51,19 @@
             <span class="shoegaze"></span>
             <span class="js-reset"></span>
         </div>
+        <div class="containerInner" style="position: relative;">
+
+        </div>
+    </div>
+    <div id="right" class="right" onclick="next()" style="font-size: 30px;
+    width: 10px;
+    height: 500px;
+    margin-left: 30px;
+    float: left;
+    margin-top: 300px;
+    cursor: pointer;">
+        ◦
+    </div>
 </body>
 
 </html>
