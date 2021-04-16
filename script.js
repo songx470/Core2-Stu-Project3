@@ -50,6 +50,9 @@ function consoleLogPerfumes() {
     console.log("Perfumes:", perfume);
   });
 }
+var index = 0;
+
+
 
 // look through our airtable data, create elements
 function showPerfumes() {
@@ -60,12 +63,18 @@ function showPerfumes() {
     // create container for each song
     var perfumeContainer = document.createElement("div");
     perfumeContainer.classList.add("perfume-container");
-    document.querySelector(".container").append(perfumeContainer);
+    document.querySelector(".containerInner").append(perfumeContainer);
 
     var perfumeImage = document.createElement("img");
     perfumeImage.classList.add("perfume-image");
     perfumeImage.src = perfume.fields.image[0].url;
     perfumeContainer.append(perfumeImage);
+
+
+     var perfumeFog = document.createElement("img");
+    perfumeFog.classList.add("perfume-fog");
+    perfumeFog.src = perfume.fields.fog[0].url;
+    perfumeContainer.append(perfumeFog);
 
     // add song titles
     var perfumeName = document.createElement("h1");
@@ -73,11 +82,23 @@ function showPerfumes() {
     perfumeName.innerText = perfume.fields.name;
     perfumeContainer.append(perfumeName);
 
+    perfumeContainer.setAttribute('bottle-img',perfume.fields.bottle[0].url); 
+    perfumeContainer.setAttribute('scent-h1',perfume.fields.scent); 
+
+var perfumeDropdowncontent = document.createElement("div");
+    perfumeDropdowncontent.classList.add("perfume-dropdowncontent");
+    document.querySelector(".dropdowncontentInner").append(perfumeDropdowncontent);
+
+var perfumeImage = document.createElement("img");
+    perfumeImage.classList.add("perfume-image");
+    perfumeImage.src = perfume.fields.image[0].url;
+    perfumeDropdowncontent.append(perfumeImage);
     // add event listener to add active class to song container
-    perfumeContainer.addEventListener("click", function(event) {
-      perfumeImage.classList.toggle("active");
-      perfumeScent.classList.toggle("active");
-    });
+    //jay
+    // perfumeContainer.addEventListener("click", function(event) {
+    //   perfumeImage.classList.toggle("active");
+    //   perfumeName.classList.toggle("active");
+    // });
 
     // get genre field from airtable
     // loop through the array and add each genre as
@@ -123,6 +144,32 @@ function showPerfumes() {
       soapContainer.style.background = "white";
     });
   });
+
+
+  showCur();
 }
+function prev(){
+  index--;
+  showCur();
+}
+function next(){
+  index++;
+  showCur();
+}
+function showCur(){
+  document.querySelector(".containerInner").style.left = index*-832+"px";
+  var bottleimg = document.getElementsByClassName("perfume-container")[index].getAttribute("bottle-img");
+  document.querySelector(".animationbox").style.background = "url("+bottleimg+") no-repeat";
+  document.querySelector(".animationbox").style.backgroundSize = "contain";
+    var scenth1 = document.getElementsByClassName("perfume-container")[index].getAttribute("scent-h1");
+  document.querySelector(".animationbox").style.background = "url("+scenth1+") no-repeat";
+  document.querySelector(".animationbox").style.backgroundSize = "contain";
+}
+
+
+
+
+
+
 
 
