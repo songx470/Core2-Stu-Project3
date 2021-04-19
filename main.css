@@ -6,6 +6,15 @@ p{
   font-size:0.95rem;
 }
 
+img{
+  height:12px; 
+  width:22px;
+}
+
+.dropdowncontent{
+  display:flex;
+}
+
 .brand{
   font-family: 'Kanit', sans-serif;
   margin-top:-15px;
