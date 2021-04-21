@@ -21,6 +21,7 @@ p{
 }
 
 #logo{
+  display:none;
   position:absolute;
   margin-left:70px;
   margin-top:-37px;
