@@ -1,6 +1,9 @@
 
 
 
+
+
+
 var Airtable = require("airtable");
 
 
@@ -95,11 +98,7 @@ function showPerfumes() {
 
     var perfumeDropdowncontent = document.createElement("div");
     perfumeDropdowncontent.classList.add("perfume-dropdowncontent");
-<<<<<<< HEAD
     document.querySelector(".dropdowncontent").append(perfumeDropdowncontent);
-=======
-    document.querySelector(".perfumeDropdowncontent").append(perfumeDropdowncontent);
->>>>>>> 1ab16b59e2b1ec6c0589d97abc027d15bbc88a3e
 
 
 
@@ -111,11 +110,7 @@ function showPerfumes() {
 
 
 var perfumeLink = document.createElement("a");
-<<<<<<< HEAD
 perfumeLink.classList.add("perfume-namedrop");
-=======
-perfumeLink.classList.add("perfume-name");
->>>>>>> 1ab16b59e2b1ec6c0589d97abc027d15bbc88a3e
 perfumeLink.href = perfume.fields["More Info."];
 perfumeLink.target = "_blank";
 perfumeLink.rel = "noreferrer nofollow";
@@ -205,7 +200,3 @@ function showCur(){
 }
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 1ab16b59e2b1ec6c0589d97abc027d15bbc88a3e
