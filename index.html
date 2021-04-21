@@ -7,33 +7,37 @@
 
     <title>Perfume</title>
 
-    <!-- add reset to create consistency between browsers and devices. -->
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=Cairo:wght@200&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="main.css">
 
-    <!-- add link to your javascript. be sure it includes "defer" -->
     <script type="text/javascript" src="airtable.browser.js" defer></script>
     <script type="text/javascript" src="script.js" defer></script>
 </head>
 
 <body>
-     
+    
     <div class="sticky">
     <div class="dropdown">
     <button class="brand">VISUALPERFUME</button>
-    <div class="dropdowncontent">
-    <p>Mouillettes > colorchart</p>
+    <div class="dropdowncontent" id="dropdowncontent">
+    <p>Colorchart</p>
     </div>
     </div>
     </div>
+
+    <div id="aboutus"><a href="https://www.newschool.edu/parsons/bfa-communication-design/">About us</a></div>
+    <a id="logo"><img style="height:25px; width:18px"src="7.png"></a>
+
+
+    <a id="scent"><img style="height:70px; width:100px"src="1.png"></a>
 
 
 
     <div class="animationbox">
     </div>
-    <div id="left" class="left" onclick="prev()" style="font-size: 30px;
+    <div id="left" class="left" onclick="prev()" style="font-size: 40px;
     width: 10px;
     height: 500px;
     float: left;
@@ -54,7 +58,7 @@
 
         </div>
     </div>
-    <div id="right" class="right" onclick="next()" style="font-size: 30px;
+    <div id="right" class="right" onclick="next()" style="font-size: 40px;
     width: 10px;
     height: 500px;
     margin-left: 30px;

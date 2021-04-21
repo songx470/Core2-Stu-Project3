@@ -3,7 +3,48 @@ body {
 }
 
 p{
-  font-size:0.95rem;
+  font-size:1.1rem;
+}
+
+img{
+  height:12px; 
+  width:22px;
+}
+
+a{
+  text-decoration:none;
+  color:black;
+}
+
+p{
+  font-family: 'Kanit', sans-serif;
+}
+
+#logo{
+  position:absolute;
+  margin-left:70px;
+  margin-top:-37px;
+}
+
+#scent{
+  position:absolute;
+  margin-left:-900px;
+  top:40%;
+}
+
+a:hover{
+  color:dimgrey;
+}
+
+#aboutus{
+  text-decoration:none;
+  color:black;
+  position:absolute;
+  margin-left:1320px;
+  margin-top:-32px;
+}
+.dropdowncontent{
+  display:flex;
 }
 
 .brand{
@@ -20,7 +61,6 @@ p{
 }
 
 .brand:hover{
-  background-color:;
 }
 
 
@@ -93,26 +133,35 @@ p{
   100% { opacity: 1; }
 }
 
+
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
 .left {
   transition: transform .2s;
+  position:absolute;
+  top:10%;
+  left:94%;
 }
 
 .left:hover{
-   -ms-transform: scale(1.09); 
-  -webkit-transform: scale(1.09); 
-  transform: scale(1.09); 
+   -ms-transform: scale(1.05); 
+  -webkit-transform: scale(1.05); 
+  transform: scale(1.05); 
+  color:dimgrey;
 }
 
 .right {
   transition: transform .2s;
+  position:absolute;
+  top:10%;
+  left:94%;
 }
 
 .right:hover{
-   -ms-transform: scale(1.09); 
-  -webkit-transform: scale(1.09); 
-  transform: scale(1.09); 
+   -ms-transform: scale(1.05); 
+  -webkit-transform: scale(1.05); 
+  transform: scale(1.05)
+  color:dimgrey; 
 }
 
 .container {
@@ -153,6 +202,7 @@ h1 {
 }
 
 .perfume-fog {
+  cursor: url(1.cur), auto;
   margin-left:-180px;
   margin-top:-200px;
   width: 700px;
@@ -160,9 +210,14 @@ h1 {
   display: inline-block
 }
 
+.perfume-namedrop{
+  margin-left:-8px;
+  font-size:1.08rem;
+}
+
 .perfume-fog:hover {
-    -webkit-animation: blink-animation 3s ;
-  animation: blink-animation 3s ;
+    -webkit-animation: blink-animation 2.2s ;
+  animation: blink-animation 2.2s ;
 }
 
 @-webkit-keyframes blink-animation {
@@ -175,8 +230,6 @@ h1 {
   50%  { opacity: 1; }
   100% { opacity: 0.3; }
 }
-
-
 
 .perfume-image.active {
   display: block;
