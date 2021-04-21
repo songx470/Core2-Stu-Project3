@@ -47,15 +47,6 @@ a:hover{
   display:flex;
 }
 
-img{
-  height:12px; 
-  width:22px;
-}
-
-.dropdowncontent{
-  display:flex;
-}
-
 .brand{
   font-family: 'Kanit', sans-serif;
   margin-top:-15px;
